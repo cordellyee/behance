@@ -111,7 +111,7 @@
 			var project = projectlist[i];
       projectHTML += "<li><a href='#' onclick='loadProject(" + project.id + ")'>" + project.name + "</a></li>";
       // if you would like to see project thumbnails use this:
-      // projectHTML += "<a href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
+      projectHTML += "<a href='#' onclick='loadProject(" + project.id + ")'><img src='" + project.covers[202] + "'></a>";
     }
     $(".projects").html(projectHTML);
   });
